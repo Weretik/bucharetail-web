@@ -1,0 +1,13 @@
+﻿{
+  "colors": {
+    "primary": "#3b82f6",
+    "neutral": "#1f2937",
+    "surface": "#87898a",
+    "info": "#0ea5e9",
+    "success": "#16a34a",
+    "warning": "#f59e0b",
+    "danger": "#dc2626"
+  },
+  "radius": { "md": "10px" },
+  "spacing": { "sm": "0.5rem", "md": "1rem" }
+}

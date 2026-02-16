@@ -1,9 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Hero} from '../ui/hero/hero';
+import {Header} from '../ui/header/header';
+import {Footer} from '../ui/footer/footer';
+import {Stats} from '../ui/stats/stats';
+import {Faq} from '../ui/faq/faq';
+import {Features} from '../ui/features/features';
+import {MainContent} from '../ui/main-content/main-content';
+import {Pricing} from '../ui/pricing/pricing';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Hero, Header, Footer, Stats, Faq, Features, MainContent, Pricing],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

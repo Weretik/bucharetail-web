@@ -1,0 +1,41 @@
+<div class="bg-surface-0 dark:bg-surface-950 px-6 pb-10 md:px-12 lg:px-20 flex flex-col items-center gap-8">
+  <div class="w-full">
+    <div class="h-px w-full bg-surface-200 dark:bg-surface-700"></div>
+  </div>
+
+  <div class="p-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 42 42" fill="none">
+      <path d="M21 0C9.40201 0 0 9.40201 0 21C11.598 21 21 11.598 21 0Z" class="fill-primary" />
+      <path d="M21 42C32.598 42 42 32.598 42 21C30.402 21 21 30.402 21 42Z" class="fill-primary" />
+      <path d="M21 0C32.598 0 42 9.40201 42 21C30.402 21 21 11.598 21 0Z" class="fill-primary" />
+      <path d="M21 42C9.40201 42 -1.01393e-06 32.598 0 21C11.598 21 21 30.402 21 42Z" class="fill-primary" />
+    </svg>
+  </div>
+
+  <div class="flex flex-wrap justify-center items-center gap-y-4 gap-x-8 p-2">
+    @for (item of ['About Us', 'News', 'Investor Relations', 'Careers', 'Media Kit']; track item) {
+      <a class="text-surface-700 hover:text-surface-900 dark:text-surface-300 dark:hover:text-surface-0 leading-tight transition-colors cursor-pointer">
+        {{ item }}
+      </a>
+    }
+  </div>
+
+  <div class="flex items-center justify-center gap-4">
+
+        <a
+          href="tel:+380509999999"
+          class="flex items-center transition-transform ease-out duration-200 hover:text-primary-500 hover:translate-x-1"
+        >
+          <i class="pi pi-phone text-lg leading-none mr-4"></i>
+          <span class="text-base font-medium">(050) 999-99-99</span>
+        </a>
+
+        <a
+          href="mailto:exsample@gmail.com"
+          class="flex items-center transition-transform ease-out duration-200 hover:text-primary-500 hover:translate-x-1"
+        >
+          <i class="pi pi-envelope text-lg leading-none mr-4"></i>
+          <span class="text-base font-medium">exsample&#64;gmail.com</span>
+        </a>
+  </div>
+</div>
