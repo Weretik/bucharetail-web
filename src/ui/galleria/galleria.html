@@ -1,0 +1,28 @@
+<div class="bg-surface-0 dark:bg-surface-950 px-6 md:px-12 lg:px-20 py-20 text-center">
+  <div class="flex flex-col gap-6">
+    <div class="flex flex-col items-center gap-4">
+      <div class="font-bold text-4xl leading-tight">
+        <span class="text-surface-900 dark:text-surface-0">Галерея </span>
+      </div>
+    </div>
+    <div class="card flex justify-center">
+      <p-galleria
+        [value]="images()"
+        [responsiveOptions]="responsiveOptions"
+        [numVisible]="5"
+        [style]="{ width: '900px', maxWidth: '100%' }">
+        <ng-template #item let-item>
+          <img [src]="item.itemImageSrc" style="width:100%" />
+        </ng-template>
+        <ng-template #thumbnail let-item>
+          <div class="px-1">
+            <img
+              [src]="item.thumbnailImageSrc"
+              class="rounded-lg"
+              style="display:block"/>
+          </div>
+        </ng-template>
+      </p-galleria>
+    </div>
+  </div>
+</div>
