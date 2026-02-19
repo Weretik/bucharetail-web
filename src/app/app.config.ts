@@ -8,12 +8,7 @@ import {bucharetailPreset} from '../util/theme/bucharetail.preset';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(
-      routes,
-      withInMemoryScrolling({
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled'
-    })),
+    provideRouter(routes, withInMemoryScrolling({scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled'})),
     provideClientHydration(withEventReplay()),
     providePrimeNG({
       theme: {
