@@ -13,29 +13,23 @@
   </div>
 
   <div class="flex flex-wrap justify-center items-center gap-y-4 gap-x-8 p-2">
-    @for (item of ['About Us', 'News', 'Investor Relations', 'Careers', 'Media Kit']; track item) {
-      <a class="text-surface-700 hover:text-surface-900 dark:text-surface-300 dark:hover:text-surface-0 leading-tight transition-colors cursor-pointer">
-        {{ item }}
+    @for (item of menu(); track item) {
+      <a
+        [href]="item.link"
+        class="text-surface-700 hover:text-surface-900 dark:text-surface-300 dark:hover:text-surface-0 leading-tight transition-colors cursor-pointer"
+      >
+        {{ item.label }}
       </a>
     }
   </div>
 
   <div class="flex items-center justify-center gap-4">
-
-        <a
-          href="tel:+380509999999"
-          class="flex items-center transition-transform ease-out duration-200 hover:text-primary-500 hover:translate-x-1"
-        >
-          <i class="pi pi-phone text-lg leading-none mr-4"></i>
-          <span class="text-base font-medium">(050) 999-99-99</span>
-        </a>
-
-        <a
-          href="mailto:exsample@gmail.com"
-          class="flex items-center transition-transform ease-out duration-200 hover:text-primary-500 hover:translate-x-1"
-        >
-          <i class="pi pi-envelope text-lg leading-none mr-4"></i>
-          <span class="text-base font-medium">exsample&#64;gmail.com</span>
-        </a>
+    <a
+      href="mailto:inboxmakc@gmail.com"
+      class="flex items-center transition-transform ease-out duration-200 hover:text-primary-500 hover:translate-x-1"
+    >
+      <i class="pi pi-envelope text-lg leading-none mr-4"></i>
+      <span class="text-base font-medium">inboxmakc&#64;gmail.com</span>
+    </a>
   </div>
 </div>
